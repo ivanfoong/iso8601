@@ -26,3 +26,7 @@ func (it *Time) UnmarshalJSON(data []byte) error {
 func (it Time) String() string {
 	return time.Time(it).String()
 }
+
+func (it Time) Format(format string) string {
+	return time.Time(it).Format(format)
+}
