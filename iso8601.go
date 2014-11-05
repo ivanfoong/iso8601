@@ -4,7 +4,7 @@ package iso8601
 
 import "time"
 
-const Format = "2006-01-02T15:04:05"
+const Format = "2006-01-02T15:04:05+08:00"
 const jsonFormat = `"` + Format + `"`
 
 type Time time.Time
